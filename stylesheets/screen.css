@@ -1,0 +1,606 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 13, ../sass/screen.scss */
+header {
+  background-color: black;
+  width: 100%;
+}
+
+/* line 17, ../sass/screen.scss */
+div.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* line 21, ../sass/screen.scss */
+#logo {
+  display: inline-block;
+  padding: 30px 0px 30px 0px;
+}
+
+/* line 25, ../sass/screen.scss */
+h1.logo {
+  display: inline;
+}
+
+/* line 28, ../sass/screen.scss */
+span {
+  font-weight: bold;
+  color: #135ec5;
+  border: none;
+  border-radius: 30px;
+  background-color: #ffffff;
+  padding: 10px 20px;
+}
+
+/* line 36, ../sass/screen.scss */
+ul li {
+  list-style: none;
+  display: inline;
+}
+
+/* line 40, ../sass/screen.scss */
+nav {
+  float: right;
+  padding: 40px 0px 10px 0px;
+}
+
+/* line 44, ../sass/screen.scss */
+a:link, a:visited, a:hover {
+  font-size: 18px;
+  font-family: "Montserrat", san-serif;
+  color: #f4f4f4;
+  padding: 0px 20px 0px 20px;
+  text-decoration: none;
+}
+
+/* line 51, ../sass/screen.scss */
+.icon::before {
+  content: url("../image/mail.png");
+  padding-right: 10px;
+  vertical-align: sub;
+}
+
+/* line 56, ../sass/screen.scss */
+.tel::before {
+  content: url("../image/phone.png");
+  padding-right: 10px;
+  vertical-align: sub;
+}
+
+/* line 61, ../sass/screen.scss */
+section {
+  background-color: #ffffff;
+}
+/* line 63, ../sass/screen.scss */
+section.first {
+  background-color: black;
+}
+
+/* line 67, ../sass/screen.scss */
+div.first {
+  width: 80%;
+  height: 600px;
+  margin: auto;
+  background-image: url("../image/car.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+/* line 76, ../sass/screen.scss */
+div.form {
+  padding-bottom: 100px;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+/* line 82, ../sass/screen.scss */
+form li {
+  padding-right: 11%;
+  display: inline;
+}
+
+/* line 86, ../sass/screen.scss */
+legend h2 {
+  font-weight: bold;
+  font-size: 30px;
+  color: #f4f4f4;
+  font-family: "Montserrat", san-serif;
+  margin: auto;
+  padding-bottom: 60px;
+}
+
+/* line 94, ../sass/screen.scss */
+fieldset {
+  margin: auto;
+}
+
+/* line 97, ../sass/screen.scss */
+input {
+  width: 15%;
+  font-weight: bold;
+  font-size: 18px;
+  color: #3c3c3c;
+  opacity: 0.8;
+  font-family: "Montserrat", san-serif;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: #3c3c3c;
+  padding-bottom: 10px;
+}
+
+/* line 111, ../sass/screen.scss */
+#search {
+  border: none;
+  background-color: #135ec5;
+  color: #f4f4f4;
+  border-radius: 20px;
+  font-size: 14px;
+  vertical-align: middle;
+  padding: 10px 40px;
+}
+
+/* line 120, ../sass/screen.scss */
+div.input, ul.input {
+  width: 80%;
+  display: inline;
+  padding: 0px 5px;
+}
+
+/* line 125, ../sass/screen.scss */
+div.button {
+  width: 20%;
+  display: inline;
+}
+
+/* line 129, ../sass/screen.scss */
+div.imgcenter {
+  text-align: center;
+}
+/* line 131, ../sass/screen.scss */
+div.imgcenter:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #c1c1c1;
+  opacity: 0.6;
+}
+
+/* line 140, ../sass/screen.scss */
+li img {
+  list-style: none;
+  vertical-align: middle;
+  padding: 20px 50px;
+  width: 5%;
+}
+
+/* line 146, ../sass/screen.scss */
+a:link.img, a:visited.img, a:hover.img {
+  padding: 0px 0px 0px 0px;
+  text-decoration: none;
+}
+
+/* line 150, ../sass/screen.scss */
+div.bmw {
+  width: 40%;
+  height: 350px;
+  background-image: url("../image/carbmw.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
+  background-position: center center;
+}
+
+/* line 160, ../sass/screen.scss */
+div.aboutbmw {
+  width: 40%;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 5%;
+}
+
+/* line 166, ../sass/screen.scss */
+div.imgcent {
+  text-align: center;
+}
+
+/* line 169, ../sass/screen.scss */
+h1 {
+  font-weight: bold;
+  font-size: 38px;
+  color: #135ec5;
+  font-family: "Montserrat", san-serif;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+/* line 177, ../sass/screen.scss */
+p {
+  font-family: "Montserrat", san-serif;
+  font-size: 16px;
+  line-height: 2;
+  color: #c1c1c1;
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+/* line 185, ../sass/screen.scss */
+p.take {
+  text-align: center;
+  padding-bottom: 0px;
+}
+
+/* line 189, ../sass/screen.scss */
+a.button {
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #135ec5;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  float: left;
+}
+
+/* line 198, ../sass/screen.scss */
+section.three {
+  height: 650px;
+  background-image: url("../image/three.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 205, ../sass/screen.scss */
+div.firstblock {
+  text-align: center;
+}
+
+/* line 208, ../sass/screen.scss */
+div.color {
+  background-color: #ffffff;
+}
+
+/* line 211, ../sass/screen.scss */
+h1.title {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+/* line 217, ../sass/screen.scss */
+a.add {
+  font-weight: bold;
+  font-size: 14px;
+  background-color: transparent;
+  border: 2px solid;
+  border-color: #f4f4f4;
+  border-radius: 20px;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+/* line 227, ../sass/screen.scss */
+div.firstslider {
+  width: 30%;
+  box-shadow: 0 0 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 233, ../sass/screen.scss */
+div.merctwo {
+  background-image: url("../image/merctwo.png");
+  height: 270px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* line 240, ../sass/screen.scss */
+a.fresh {
+  font-weight: bold;
+  font-size: 14px;
+  color: #135ec5;
+  background-color: #f4f4f4;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
+  float: right;
+}
+
+/* line 253, ../sass/screen.scss */
+h2 {
+  font-weight: bold;
+  font-size: 26px;
+  color: black;
+  font-family: "Montserrat", san-serif;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 40px;
+}
+
+/* line 262, ../sass/screen.scss */
+p.model {
+  font-weight: bold;
+  font-size: 12px;
+  color: #135ec5;
+  font-family: "Montserrat", san-serif;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* line 270, ../sass/screen.scss */
+p.type {
+  font-size: 18px;
+  color: #c1c1c1;
+  font-family: "Montserrat", san-serif;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* line 277, ../sass/screen.scss */
+p.price {
+  font-weight: bold;
+  font-size: 32px;
+  color: #16ad2c;
+  font-family: "Montserrat", san-serif;
+  text-align: center;
+  padding-bottom: 10px;
+  display: inline-block;
+  padding-right: 40px;
+}
+
+/* line 287, ../sass/screen.scss */
+a.moreinfo {
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  background-color: #e2e2e2;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 35px;
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+
+/* line 298, ../sass/screen.scss */
+div.secondslider {
+  width: 60%;
+  float: right;
+  box-shadow: 0 0 20px;
+}
+
+/* line 303, ../sass/screen.scss */
+div.mercone {
+  width: 55%;
+  background-image: url("../image/mercone.png");
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  float: right;
+  padding-left: 20px;
+}
+
+/* line 313, ../sass/screen.scss */
+h2.secondslider {
+  color: #135ec5;
+  text-align: left;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+/* line 319, ../sass/screen.scss */
+div.text {
+  height: 500px;
+  background-color: white;
+  width: 45%;
+  vertical-align: middle;
+  padding-left: 19px;
+}
+
+/* line 327, ../sass/screen.scss */
+p.top {
+  font-weight: bold;
+  text-align: left;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* line 333, ../sass/screen.scss */
+p.float {
+  display: inline-block;
+  float: right;
+  padding-right: 0px;
+  padding-bottom: 0px;
+}
+
+/* line 339, ../sass/screen.scss */
+a.ordercar {
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  background-color: #135ec5;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 35px;
+}
+
+/* line 348, ../sass/screen.scss */
+p.padding {
+  font-size: 12px;
+  padding-bottom: 50px;
+}
+
+/* line 352, ../sass/screen.scss */
+div.padding {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* line 356, ../sass/screen.scss */
+ul.imgfooter {
+  padding: 20px 30px;
+}
+
+/* line 359, ../sass/screen.scss */
+li img.footer {
+  list-style: none;
+  vertical-align: middle;
+  padding: 40px 0px;
+  width: 4%;
+}
+
+/* line 365, ../sass/screen.scss */
+input.border {
+  border-bottom-color: #c1c1c1;
+  opacity: 0.7;
+}
+
+/* line 369, ../sass/screen.scss */
+div.footer::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #c1c1c1;
+  opacity: 0.6;
+  margin-top: 50px;
+}
+
+/* line 378, ../sass/screen.scss */
+.box {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  box-shadow: 0 0 20px;
+  padding-top: 50px;
+}
+
+/* line 385, ../sass/screen.scss */
+select {
+  font-weight: bold;
+  font-size: 18px;
+  color: #3c3c3c;
+  opacity: 0.8;
+  font-family: "Montserrat", san-serif;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #c1c1c1;
+  padding-bottom: 10px;
+}
+
+/* line 398, ../sass/screen.scss */
+fieldset.end {
+  background-color: #135ec5;
+  padding-top: 30px;
+}
+
+/* line 402, ../sass/screen.scss */
+button.hidesearch {
+  border: none;
+  background-color: #135ec5;
+  color: white;
+  border-radius: 10px;
+  font-size: 11px;
+  vertical-align: middle;
+  padding: 10px 20px;
+  margin-top: 50px;
+}
+
+/* line 412, ../sass/screen.scss */
+div.buttonfooter {
+  background-color: #135ec5;
+  padding-bottom: 50px;
+}
+
+/* line 416, ../sass/screen.scss */
+button.searchfooter {
+  font-weight: bold;
+  border: none;
+  background-color: #ffffff;
+  color: #135ec5;
+  border-radius: 20px;
+  font-size: 14px;
+  vertical-align: middle;
+  padding: 10px 40px;
+}

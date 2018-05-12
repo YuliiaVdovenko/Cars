@@ -1,0 +1,425 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$blue: #135ec5;
+$text: #f4f4f4;
+$back: #ffffff;
+$button: #3c3c3c;
+$font: 'Montserrat', san-serif;
+header {
+  background-color: black;
+  width: 100%;
+}
+div.container {
+  max-width: 1200px;
+  margin: auto;
+}
+#logo {
+  display: inline-block;
+  padding: 30px 0px 30px 0px;
+}
+h1.logo {
+  display: inline;
+}
+  span {
+    font-weight: bold;
+    color: $blue;
+    border: none;
+    border-radius: 30px;
+    background-color: $back;
+    padding: 10px 20px;
+  }
+  ul li {
+    list-style: none;
+    display: inline;
+  }
+  nav {
+    float: right;
+    padding: 40px 0px 10px 0px;
+  }
+  a:link, a:visited, a:hover {
+    font-size: 18px;
+    font-family: $font;
+    color: $text;
+    padding: 0px 20px 0px 20px;
+    text-decoration: none;
+  }
+  .icon::before {
+    content: url("../image/mail.png");
+    padding-right: 10px;
+    vertical-align: sub;
+  }
+  .tel::before {
+    content: url("../image/phone.png");
+    padding-right: 10px;
+    vertical-align: sub;
+  }
+  section {
+    background-color: $back;
+    &.first {
+      background-color: black;
+    }
+  }
+  div.first {
+      width: 80%;
+      height: 600px;
+      margin: auto;
+      background-image: url("../image/car.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+    }
+    div.form {
+      padding-bottom: 100px;
+      text-align: center;
+      width: 80%;
+      margin: auto;
+    }
+    form li {
+      padding-right: 11%;
+      display: inline;
+    }
+    legend h2 {
+      font-weight: bold;
+      font-size: 30px;
+      color: $text;
+      font-family: $font;
+      margin:auto;
+      padding-bottom: 60px;
+    }
+    fieldset {
+      margin: auto;
+    }
+    input {
+      width: 15%;
+      font-weight: bold;
+      font-size: 18px;
+      color: #3c3c3c;
+      opacity: 0.8;
+      font-family: $font;
+      background-color: transparent;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom-color: $button;
+      padding-bottom: 10px;
+    }
+    #search {
+      border: none;
+      background-color:$blue;
+      color: $text;
+      border-radius: 20px;
+      font-size: 14px;
+      vertical-align: middle;
+      padding: 10px 40px;
+    }
+    div.input, ul.input {
+      width: 80%;
+      display: inline;
+      padding: 0px 5px;
+    }
+    div.button {
+      width: 20%;
+      display: inline;
+    }
+    div.imgcenter {
+      text-align: center;
+      &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #c1c1c1;
+        opacity: 0.6;
+      }
+    }
+    li img {
+      list-style: none;
+      vertical-align: middle;
+      padding: 20px 50px;
+      width: 5%;
+    }
+    a:link.img, a:visited.img, a:hover.img  {
+      padding: 0px 0px 0px 0px;
+      text-decoration: none;
+    }
+    div.bmw {
+      width: 40%;
+      height: 350px;
+      background-image: url("../image/carbmw.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: inline-block;
+      vertical-align: middle;
+      background-position: center center;
+    }
+    div.aboutbmw {
+      width: 40%;
+      display:inline-block;
+      vertical-align: middle;
+      padding-left: 5%;
+    }
+    div.imgcent {
+      text-align: center;
+    }
+    h1 {
+      font-weight: bold;
+      font-size: 38px;
+      color: $blue;
+      font-family: $font;
+      text-align: left;
+      padding-bottom: 20px;
+    }
+    p {
+      font-family: $font;
+      font-size: 16px;
+      line-height: 2;
+      color: #c1c1c1;
+      text-align: left;
+      padding-bottom: 30px;
+    }
+    p.take {
+      text-align: center;
+      padding-bottom: 0px;
+    }
+    a.button {
+      font-weight: bold;
+      font-size: 14px;
+      background-color: $blue;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 20px;
+      float: left;
+    }
+    section.three {
+      height: 650px;
+      background-image: url("../image/three.png");
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    div.firstblock {
+      text-align: center;
+    }
+    div.color{
+      background-color: $back;
+    }
+    h1.title {
+      color: $back;
+      text-align: center;
+      padding-top: 100px;
+      padding-bottom: 70px;
+    }
+    a.add {
+      font-weight: bold;
+      font-size: 14px;
+      background-color: transparent;
+      border: 2px solid;
+      border-color: $text;
+      border-radius: 20px;
+      padding: 10px 20px;
+      display: inline-block;
+    }
+    div.firstslider {
+      width: 30%;
+      box-shadow: 0 0 20px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    div.merctwo {
+      background-image: url("../image/merctwo.png");
+      height: 270px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    a.fresh {
+      font-weight: bold;
+      font-size: 14px;
+      color: $blue;
+      background-color: $text;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 20px;
+      display: inline-block;
+      margin-top: 20px;
+      margin-right: 20px;
+      float: right;
+    }
+    h2 {
+      font-weight: bold;
+      font-size: 26px;
+      color: black;
+      font-family: $font;
+      text-align: center;
+      padding-bottom: 10px;
+      padding-top: 40px;
+    }
+    p.model {
+      font-weight: bold;
+      font-size: 12px;
+      color: $blue;
+      font-family: $font;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    p.type {
+      font-size: 18px;
+      color: #c1c1c1;
+      font-family: $font;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    p.price {
+      font-weight: bold;
+      font-size: 32px;
+      color:#16ad2c;
+      font-family: $font;
+      text-align: center;
+      padding-bottom: 10px;
+      display: inline-block;
+      padding-right: 40px;
+    }
+    a.moreinfo {
+      font-weight: bold;
+      font-size: 14px;
+      color: white;
+      background-color: #e2e2e2;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 35px;
+      display: inline-block;
+      vertical-align: text-bottom;
+    }
+    div.secondslider {
+      width: 60%;
+      float: right;
+      box-shadow: 0 0 20px;
+    }
+    div.mercone {
+      width: 55%;
+      background-image: url("../image/mercone.png");
+      height: 500px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      float: right;
+      padding-left: 20px;
+    }
+    h2.secondslider {
+      color: $blue;
+      text-align: left;
+      padding-top: 80px;
+      padding-bottom: 40px;
+    }
+    div.text {
+      height: 500px;
+      background-color: white;
+      width: 45%;
+      vertical-align: middle;
+      padding-left: 19px;
+
+    }
+    p.top {
+      font-weight: bold;
+      text-align: left;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    p.float {
+      display: inline-block;
+      float: right;
+      padding-right: 0px;
+      padding-bottom: 0px;
+    }
+    a.ordercar {
+      font-weight: bold;
+      font-size: 14px;
+      color: white;
+      background-color: $blue;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 35px;
+    }
+    p.padding {
+      font-size: 12px;
+      padding-bottom: 50px;
+    }
+    div.padding {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    ul.imgfooter {
+      padding: 20px 30px;
+    }
+    li img.footer {
+      list-style: none;
+      vertical-align: middle;
+      padding: 40px 0px;
+      width: 4%;
+    }
+    input.border {
+      border-bottom-color: #c1c1c1;
+      opacity: 0.7;
+    }
+    div.footer::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background: #c1c1c1;
+      opacity: 0.6;
+      margin-top: 50px;
+    }
+    .box {
+      text-align: center;
+      width: 80%;
+      margin: auto;
+      box-shadow: 0 0 20px;
+      padding-top: 50px;
+    }
+    select {
+      font-weight: bold;
+      font-size: 18px;
+      color: #3c3c3c;
+      opacity: 0.8;
+      font-family: $font;
+      background-color: transparent;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid #c1c1c1;
+      padding-bottom: 10px;
+    }
+    fieldset.end {
+      background-color: $blue;
+      padding-top: 30px;
+    }
+    button.hidesearch {
+      border: none;
+      background-color: $blue;
+      color: white;
+      border-radius: 10px;
+      font-size: 11px;
+      vertical-align: middle;
+      padding: 10px 20px;
+      margin-top: 50px;
+    }
+    div.buttonfooter {
+      background-color: $blue;
+      padding-bottom: 50px;
+    }
+    button.searchfooter {
+      font-weight: bold;
+      border: none;
+      background-color: $back;
+      color: $blue;
+      border-radius: 20px;
+      font-size: 14px;
+      vertical-align: middle;
+      padding: 10px 40px;
+    }
